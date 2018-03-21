@@ -9,7 +9,8 @@ export class ImagelistComponent implements OnInit {
 images:any[];
 imageFound:boolean=false;
 searching:boolean=false;
-
+searchQuery:any;
+imagesFound:any;
 handleSuccess(data){
   this.imageFound=true;
   this.images=data.hits;
